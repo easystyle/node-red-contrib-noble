@@ -2,6 +2,11 @@
 
 これは @kmi/node-red-contrib-noble のフォークであり、依存ライブラリを @stoprocent/noble に差し替えたバージョンです。
 
+### ・iBeaconデータ解析処理の削除
+
+iBeacon仕様のUUID、major、minor、measuredPower、accuracy、proximityの抽出処理を削除しました。
+これにより、msgオブジェクトにはiBeacon特有の情報が含まれなくなり、advertisementやrssiなどの未加工データが出力されます。
+
 # BLE Node for NodeRed
 
 This is a node for [NodeRed](http://nodered.org) a tool for easily wiring together hardware devices, APIs and online services. This node provides a support for interacting with Bluetooth Low Energy (BLE) devices.
